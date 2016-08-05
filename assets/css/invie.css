@@ -38,13 +38,12 @@ ul, ol {
 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, textarea:focus {
     background: rgba(255,255,255,0.83);
     border: 1px solid#384c58;
+    padding: 1px;
+    border-radius: 4px;
 }
 
 input[type=text], input[type=password], input[type=email], textarea {
     border-radius: 4px;
-}
-
-input[type=text], input[type=password], input[type=email] {
     padding: 1px;
 }
 
@@ -98,21 +97,48 @@ h1 span {
 
 .button {
     border-radius: 10px;
-    background: linear-gradient(to left,#fd324e, #ff7250) ;
+    /*background: linear-gradient(to left,#fd324e, #ff7250) ;*/
     color: white;
     border: 0;
     padding: 7px 12px 7px 12px;
     cursor: pointer;
     text-decoration: none;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff7250+0,fd324e+100 */
+    background: rgb(255,114,80); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(255,114,80,1) 0%, rgba(253,50,78,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(255,114,80,1) 0%,rgba(253,50,78,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(255,114,80,1) 0%,rgba(253,50,78,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7250', endColorstr='#fd324e',GradientType=1 ); /* IE6-9 */
 }
 
 .button:hover {
     border-radius: 10px;
-    background: linear-gradient(to left,#c32339, #d75d40) ;
+    /*background: linear-gradient(to left,#c32339, #d75d40) ;*/
     color: white;
     border: 0;
     padding: 7px 12px 7px 12px;
     cursor: pointer;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d75d40+0,c32339+100 */
+    background: rgb(215,93,64); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(215,93,64,1) 0%, rgba(195,35,57,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(215,93,64,1) 0%,rgba(195,35,57,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(215,93,64,1) 0%,rgba(195,35,57,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d75d40', endColorstr='#c32339',GradientType=1 ); /* IE6-9 */    
+}
+
+.button:focus {
+    border-radius: 10px;
+    /*background: linear-gradient(to left,#c32339, #d75d40) ;*/
+    color: white;
+    border: 0;
+    padding: 7px 12px 7px 12px;
+    cursor: pointer;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff866b+0,fc556c+100 */
+    background: rgb(255,134,107); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(255,134,107,1) 0%, rgba(252,85,108,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(255,134,107,1) 0%,rgba(252,85,108,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(255,134,107,1) 0%,rgba(252,85,108,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff866b', endColorstr='#fc556c',GradientType=1 ); /* IE6-9 */
 }
 
 .guitarras {
