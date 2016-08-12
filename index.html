@@ -5,29 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
     <meta name="description" content="overview &amp; stats">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 
     <title>invie</title>
 
     <link rel="stylesheet" href="assets/css/invie.css">
+    <!--<link rel="stylesheet" media="(max-width: 800px)" href="assets/css/media-query.css">-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <section class="portada">
+    <section id="secPortada" class="portada">
         <div class="content">
             <header id="hdrHeader">
+                <span id="btnMenu" class="icon-menu btn-menu"></span>
                 <!--logotipo-->
                 <figure class="logotipo">
-                    <img width="186" src="assets/images/invie.png" alt="invie">
+                    <a href="index.html">
+                        <img width="186" src="assets/images/invie.png" srcset="assets/images/invie.png 1x, assets/images/invie2x.png 2x" alt="invie">
+                    </a>
                 </figure>
                 <!--menu-->
-                <nav class="menu float-right">
+                <nav id="navMenu" class="menu float-right">
                     <ul>
                         <!--home-->
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="index.html#secPortada">Home</a>
                         </li>
                         <!--guitarras-->
                         <li>
@@ -41,7 +45,7 @@
                 </nav>
             </header>
             <!--portada-->
-            <div id="secPortada">
+            <div>
                 <!--titulo-->
                 <h1>Guitarras <span>Invi</span>sibles</h1>
                 <!--resumen-->
@@ -49,6 +53,9 @@
                 <!--boton-->
                 <a href="#secGuitarras" class="button">Conoce más</a>
             </div>
+            <a href="#secGuitarras">
+                <img class="scroll" width="45px" height="30px" src="assets/images/scroll-down.png" />
+            </a>
         </div>
     </section>
     <!--contenido-->
@@ -59,10 +66,10 @@
             <!--guitarra 1-->
             <article>
                 <!--imagen-->
-                <img class="guitar-right float-right" src="assets/images/invie-acustica.png" alt="invie acustica" width="350">
+                <img class="guitar-right float-right" data-src="assets/images/invie-acustica.png|assets/images/invie-acustica2x.png" alt="invie acustica" width="350">
                 <div class="margin-left-35 margin-bottom-30">
                     <!--titulo-->
-                    <h3>Invie Acustica</h3>
+                    <h3>Invie Acustic</h3>
                     <!--atributos-->
                     <ol class="no-padding">
                         <li>Estilo vintage</li>
@@ -74,7 +81,7 @@
             <!--guitarra 2-->
             <article class="content-guitar-b">
                 <!--imagen-->
-                <img class="guitar-left float-left" src="assets/images/invie-classic.png" alt="invie classic" width="400">
+                <img class="guitar-left float-left" data-src="assets/images/invie-classic.png|assets/images/invie-classic2x.png" alt="invie classic" width="400">
                 <div class="text-guitar-right">
                     <!--titulo-->
                     <h3>Invie Classic</h3>
@@ -92,7 +99,7 @@
         <div class="content">
             <div class="contacto">
                 <div>
-                    <img src="assets/images/invie-white.png" alt="logotipo blanco">
+                    <img data-src="assets/images/invie-white.png|assets/images/invie-white2x.png" alt="logotipo blanco">
                 </div>
                 <div class="contactos">
                     <div>
@@ -161,8 +168,11 @@
             </form>
         </div>
     </footer>
-
-
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
+    <script src="assets/js/invie.js"></script>
+    <!--End Scripts-->
 </body>
 
 </html>
