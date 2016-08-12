@@ -53,7 +53,7 @@ h1 span {
 
 .content {
     margin: auto;
-    width: 800px;
+    max-width: 800px;
 }
 
 .logotipo {
@@ -82,7 +82,7 @@ h1 span {
     padding: 20px 0px 160px 0px;
 }
 
-.portada2 {    
+.portada2 {   
     background: url('../images/background.png') black;
     background-size: cover;
     color: white !important;  
@@ -306,6 +306,50 @@ h1 span {
     resize: vertical;
     max-height: 130px;
     margin-bottom: 7px;
+}
+
+/*tablets*/
+@media screen and (max-width: 850px) {
+    /*portada*/
+    h1 {
+        font-size: 45px;
+    }
+    .portada {
+        padding: 25px 20px 30px 20px;
+    }
+    .portada h3 {
+        font-size: 18px;
+    }
+    .portada .button {
+        margin: 5px 0 25px 0;
+        display: inline-block;
+    }
+    /*portada*/
+    /*guitarras*/
+    .guitarras {
+        padding: 20px 10px 20px 10px;
+        text-align: center;
+    }
+    .guitarras .float-left, .guitarras .float-right {
+        float: none;
+        position: static;
+    }
+    .content-guitar-b{
+        height: auto;
+    }
+    .guitarras article div {
+        padding: 0;
+        margin: 0 0 20px 0;
+    }
+    .text-guitar-right {
+        position: static;
+    }
+    .guitar-left {
+        margin-top: 30px !important;
+    }
+    /*guitarras*/
+    /*footer*/    
+    /*footer*/
 }
 
 /*float*/
