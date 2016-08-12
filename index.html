@@ -16,14 +16,14 @@
 </head>
 
 <body>
-    <section class="portada">
+    <section id="secPortada" class="portada">
         <div class="content">
             <header id="hdrHeader">
                 <span id="btnMenu" class="icon-menu btn-menu"></span>
                 <!--logotipo-->
                 <figure class="logotipo">
                     <a href="index.html">
-                        <img width="186" src="assets/images/invie.png" alt="invie">
+                        <img width="186" src="assets/images/invie.png" srcset="assets/images/invie.png 1x, assets/images/invie2x.png 2x" alt="invie">
                     </a>
                 </figure>
                 <!--menu-->
@@ -31,7 +31,7 @@
                     <ul>
                         <!--home-->
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="index.html#secPortada">Home</a>
                         </li>
                         <!--guitarras-->
                         <li>
@@ -45,7 +45,7 @@
                 </nav>
             </header>
             <!--portada-->
-            <div id="secPortada">
+            <div>
                 <!--titulo-->
                 <h1>Guitarras <span>Invi</span>sibles</h1>
                 <!--resumen-->
@@ -66,7 +66,7 @@
             <!--guitarra 1-->
             <article>
                 <!--imagen-->
-                <img class="guitar-right float-right" src="assets/images/invie-acustica.png" alt="invie acustica" width="350">
+                <img class="guitar-right float-right" data-src="assets/images/invie-acustica.png|assets/images/invie-acustica2x.png" alt="invie acustica" width="350">
                 <div class="margin-left-35 margin-bottom-30">
                     <!--titulo-->
                     <h3>Invie Acustic</h3>
@@ -81,7 +81,7 @@
             <!--guitarra 2-->
             <article class="content-guitar-b">
                 <!--imagen-->
-                <img class="guitar-left float-left" src="assets/images/invie-classic.png" alt="invie classic" width="400">
+                <img class="guitar-left float-left" data-src="assets/images/invie-classic.png|assets/images/invie-classic2x.png" alt="invie classic" width="400">
                 <div class="text-guitar-right">
                     <!--titulo-->
                     <h3>Invie Classic</h3>
@@ -99,7 +99,7 @@
         <div class="content">
             <div class="contacto">
                 <div>
-                    <img src="assets/images/invie-white.png" alt="logotipo blanco">
+                    <img data-src="assets/images/invie-white.png|assets/images/invie-white2x.png" alt="logotipo blanco">
                 </div>
                 <div class="contactos">
                     <div>
@@ -170,6 +170,7 @@
     </footer>
     <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
     <script src="assets/js/invie.js"></script>
     <!--End Scripts-->
 </body>
