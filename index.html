@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
     <meta name="description" content="overview &amp; stats">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 
     <title>invie</title>
@@ -19,12 +19,15 @@
     <section class="portada">
         <div class="content">
             <header id="hdrHeader">
+                <span id="btnMenu" class="icon-menu btn-menu"></span>
                 <!--logotipo-->
                 <figure class="logotipo">
-                    <img width="186" src="assets/images/invie.png" alt="invie">
+                    <a href="index.html">
+                        <img width="186" src="assets/images/invie.png" alt="invie">
+                    </a>
                 </figure>
                 <!--menu-->
-                <nav class="menu float-right">
+                <nav id="navMenu" class="menu float-right">
                     <ul>
                         <!--home-->
                         <li>
@@ -50,6 +53,9 @@
                 <!--boton-->
                 <a href="#secGuitarras" class="button">Conoce más</a>
             </div>
+            <a href="#secGuitarras">
+                <img class="scroll" width="45px" height="30px" src="assets/images/scroll-down.png" />
+            </a>
         </div>
     </section>
     <!--contenido-->
@@ -162,8 +168,10 @@
             </form>
         </div>
     </footer>
-
-
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/js/invie.js"></script>
+    <!--End Scripts-->
 </body>
 
 </html>
