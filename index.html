@@ -10,13 +10,10 @@
 
     <title>invie</title>
 
-    <link rel="stylesheet" href="assets/css/invie.css">
-    <!--<link rel="stylesheet" media="(max-width: 800px)" href="assets/css/media-query.css">-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <section id="secPortada" class="portada">
+    <section id="secPortada" class="portada fullheight">
         <div class="content">
             <header id="hdrHeader">
                 <span id="btnMenu" class="icon-menu btn-menu"></span>
@@ -168,10 +165,19 @@
             </form>
         </div>
     </footer>
+    <!--Styles-->
+    <link rel="stylesheet" href="assets/css/invie.min.css">
+    <!--<link rel="stylesheet" media="(max-width: 800px)" href="assets/css/media-query.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet" type="text/css">
+    <!--Styles-->
     <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
-    <script src="assets/js/invie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="assets/js/invie.min.js"></script>
+    <script type="text/javascript">
+        swipeMenu(document.body);
+    </script>
     <!--End Scripts-->
 </body>
 

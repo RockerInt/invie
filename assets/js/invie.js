@@ -23,17 +23,25 @@ var btnMenu = document.getElementById("btnMenu");
 var navMenu = document.getElementById("navMenu");
 var $itemsMenu = $(".menu a");
 
-var btnMenu_Click = function () {
+var toggleMenu = function () {
     navMenu.classList.toggle("active");
     btnMenu.classList.toggle("icon-close");
+}
+var showMenu = function () {
+    navMenu.classList.add("active");
+    btnMenu.classList.add("icon-close");
+}
+var hideMenu = function () {
+    navMenu.classList.remove("active");
+    btnMenu.classList.remove("icon-close");
 }
 
 function mediaQuery() {
     if (consulta.matches && !mQuery) {
         mQuery = true;
-        btnMenu.addEventListener("click", btnMenu_Click);
-        btnMenu.addEventListener("touchstart", btnMenu_Click);
-        $itemsMenu.on("click", btnMenu_Click).on("touchstart", btnMenu_Click);
+        btnMenu.addEventListener("click", toggleMenu);
+        //btnMenu.addEventListener("touchstart", btnMenu_Click);
+        $itemsMenu.on("click", toggleMenu);//.on("touchstart", btnMenu_Click);
     }
 }
 mediaQuery();
@@ -42,3 +50,10 @@ mediaQuery();
 var bLazy = new Blazy({
     selector: 'img'
 });
+var gestos;
+function swipeMenu($element) {
+    gestos = new Hammer(document.body);
+
+    gestos.on('swipeleft', hideMenu);
+    gestos.on('swiperight', showMenu);
+}

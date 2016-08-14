@@ -410,6 +410,7 @@ h1 span {
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .portada{
         background: url('../images/background.png') #384c58;
+        background-size: cover; 
     } 
 }
 /*Retina*/
@@ -456,6 +457,14 @@ h1 span {
 }
 /*Tablets*/
 /*Phablet*/
+@media screen and (max-width: 660px) and (min-height: 480px) {
+    .fullheight {
+        min-height: 100vh;
+    }
+    .scroll {
+        display: inline-block;
+    }
+}
 @media screen and (max-width: 660px) {
     /*portada*/
     h1 {
@@ -464,7 +473,6 @@ h1 span {
     .portada {
         padding: 0;
         text-align: center;
-        min-height: 100vh;
         position: relative;
     }
     .portada2 {
@@ -503,9 +511,6 @@ h1 span {
     }
     .portada .button {
         margin: 5px 0 25px 0;
-        display: inline-block;
-    }
-    .scroll {
         display: inline-block;
     }
     /*portada*/
@@ -715,7 +720,63 @@ h1 span {
     } 
     /*footer*/
 }
+@media screen and (max-width: 410px) {
+    .guitarras h2 {
+        font-size: 25px
+    }
+    .guitarras h3 {
+        font-size: 30px;
+    }
+    .guitarras li {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .guitarras h2 {
+        font-size: 20px
+    }
+    .guitarras h3 {
+        font-size: 25px;
+    }
+    .guitarras li {
+        font-size: 14px;
+    }
+}
 /*Smartphones*/
+/* fix iOS bug not displaying 100vh correctly */
+/* ipad */
+/*@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.fullheight {
+		height: 768px;
+	}
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.fullheight {
+		height: 1024px;
+	}
+}*/
+/* iphone5 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+	/*.fullheight {
+		height: 320px;
+	}*/
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+	.fullheight {
+		height: 568px;
+	}
+}
+/* iPhone 4 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+	/*.fullheight {
+		height: 320px;
+	}*/
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+	.fullheight {
+		height: 480px;
+	}
+}
 /*Media Querys*/
 
 /*float*/
